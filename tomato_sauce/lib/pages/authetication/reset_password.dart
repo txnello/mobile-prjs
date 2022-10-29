@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tomato_sauce/pages/home_page.dart';
 import 'package:tomato_sauce/widgets/round_button.dart';
 
 import '../../widgets/text_field.dart';
@@ -104,9 +105,14 @@ class _ResetPasswordState extends State<ResetPassword> {
                                     borderRadius: BorderRadius.circular(100.0),
                                     side: BorderSide(color: Colors.red)))),
                     onPressed: () {
-                      setState(() {
-                        emailSent = !emailSent;
-                      });
+                      if (!emailSent) {
+                        setState(() {
+                          emailSent = !emailSent;
+                        });
+                      } else {
+                        Navigator.of(context).pushNamedAndRemoveUntil(
+                            '/home', (Route<dynamic> route) => false);
+                      }
                     },
                     child: Text(
                       emailSent ? 'Reset password' : 'Send email',
