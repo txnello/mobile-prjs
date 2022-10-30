@@ -7,6 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:tomato_sauce/pages/authetication/reset_password.dart';
 import 'package:tomato_sauce/pages/authetication/signup.dart';
 import 'package:tomato_sauce/pages/home_page.dart';
+import 'package:tomato_sauce/widgets/continue_button.dart';
 import 'package:tomato_sauce/widgets/round_button.dart';
 
 import '../../widgets/text_field.dart';
@@ -28,6 +29,11 @@ class _LoginState extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
+    onPressedContinueButton() {
+      Navigator.of(context)
+          .pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+    }
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
@@ -99,26 +105,8 @@ class _LoginState extends State<Login> {
                 ),
 
                 // button
-                Container(
-                  width: 200,
-                  height: 50,
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(100.0),
-                                    side: BorderSide(color: Colors.red)))),
-                    onPressed: () {
-                      Navigator.of(context).pushNamedAndRemoveUntil(
-                          '/home', (Route<dynamic> route) => false);
-                    },
-                    child: const Text(
-                      'Login',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ),
-                ),
+                ContinueButton(
+                    text: 'Login', onPressed: onPressedContinueButton),
 
                 // forgot password
                 Padding(

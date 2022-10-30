@@ -1,10 +1,11 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tomato_sauce/pages/home_page.dart';
+import 'package:tomato_sauce/widgets/continue_button.dart';
 import 'package:tomato_sauce/widgets/round_button.dart';
 
 import '../../widgets/text_field.dart';
@@ -35,6 +36,17 @@ class _ResetPasswordState extends State<ResetPassword> {
 
   @override
   Widget build(BuildContext context) {
+    onPressedContinueButton() {
+      if (!emailSent) {
+        setState(() {
+          emailSent = !emailSent;
+        });
+      } else {
+        Navigator.of(context)
+            .pushNamedAndRemoveUntil('/home', (Route<dynamic> route) => false);
+      }
+    }
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
@@ -79,7 +91,8 @@ class _ResetPasswordState extends State<ResetPassword> {
                     icon: Icon(Icons.mail),
                     readOnly: emailSent),
                 if (emailSent)
-                  CustomTextField(text: "Code", icon: Icon(Icons.numbers)),
+                  CustomTextField(
+                      text: "Code", icon: Icon(Icons.numbers), numeric: true),
                 if (emailSent)
                   CustomTextField(
                       text: "Password",
@@ -94,32 +107,9 @@ class _ResetPasswordState extends State<ResetPassword> {
                       hide: repeatPasswordStatus),
 
                 // button
-                Container(
-                  width: 200,
-                  height: 50,
-                  child: ElevatedButton(
-                    style: ButtonStyle(
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(100.0),
-                                    side: BorderSide(color: Colors.red)))),
-                    onPressed: () {
-                      if (!emailSent) {
-                        setState(() {
-                          emailSent = !emailSent;
-                        });
-                      } else {
-                        Navigator.of(context).pushNamedAndRemoveUntil(
-                            '/home', (Route<dynamic> route) => false);
-                      }
-                    },
-                    child: Text(
-                      emailSent ? 'Reset password' : 'Send email',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ),
-                ),
+                ContinueButton(
+                    text: emailSent ? 'Reset password' : 'Send email',
+                    onPressed: onPressedContinueButton)
               ],
             ),
           ),
