@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+typedef StringCallback = Function(String value);
+
 class CustomTextField extends StatelessWidget {
   final String text;
   final Icon icon;
@@ -11,6 +13,8 @@ class CustomTextField extends StatelessWidget {
   final bool hide; // booleano che indica se la password è da mostrare o no
   final bool readOnly;
   final bool numeric;
+  final StringCallback? onSubmitted;
+  final TextEditingController controller;
 
   const CustomTextField(
       {super.key,
@@ -19,15 +23,20 @@ class CustomTextField extends StatelessWidget {
       this.password,
       this.hide = false,
       this.readOnly = false,
-      this.numeric = false});
+      this.numeric = false,
+      this.onSubmitted,
+      required this.controller});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: TextFormField(
+        controller: controller,
         enabled: !readOnly,
         obscureText: hide,
+        onFieldSubmitted: (value) =>
+            onSubmitted != null ? onSubmitted!(value) : null,
         keyboardType: numeric ? TextInputType.number : TextInputType.text,
         decoration: InputDecoration(
           prefixIcon: icon,

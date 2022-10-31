@@ -19,6 +19,11 @@ class Signup extends StatefulWidget {
 
 class _SignupState extends State<Signup> {
   bool passwordStatus = true;
+
+  final emailController = TextEditingController();
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
+
   passwordVisualization() {
     setState(() {
       passwordStatus = !passwordStatus;
@@ -71,9 +76,16 @@ class _SignupState extends State<Signup> {
                 ),
 
                 // fields
-                CustomTextField(text: "E-mail", icon: Icon(Icons.mail)),
-                CustomTextField(text: "Username", icon: Icon(Icons.person)),
                 CustomTextField(
+                    controller: emailController,
+                    text: "E-mail",
+                    icon: Icon(Icons.mail)),
+                CustomTextField(
+                    controller: usernameController,
+                    text: "Username",
+                    icon: Icon(Icons.person)),
+                CustomTextField(
+                    controller: passwordController,
                     text: "Password",
                     icon: Icon(Icons.key),
                     password: passwordVisualization,

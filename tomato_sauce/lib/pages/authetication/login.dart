@@ -21,6 +21,10 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   bool passwordStatus = true;
+
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
+
   passwordVisualization() {
     setState(() {
       passwordStatus = !passwordStatus;
@@ -96,8 +100,12 @@ class _LoginState extends State<Login> {
                 ),
 
                 // fields
-                CustomTextField(text: "Username", icon: Icon(Icons.person)),
                 CustomTextField(
+                    controller: usernameController,
+                    text: "Username",
+                    icon: Icon(Icons.person)),
+                CustomTextField(
+                  controller: passwordController,
                   text: "Password",
                   icon: Icon(Icons.key),
                   password: passwordVisualization,

@@ -20,6 +20,11 @@ class ResetPassword extends StatefulWidget {
 class _ResetPasswordState extends State<ResetPassword> {
   bool emailSent = false;
 
+  final emailController = TextEditingController();
+  final codeController = TextEditingController();
+  final passwordController = TextEditingController();
+  final repPasswordController = TextEditingController();
+
   bool passwordStatus = true;
   passwordVisualization() {
     setState(() {
@@ -87,20 +92,26 @@ class _ResetPasswordState extends State<ResetPassword> {
 
                 // fields
                 CustomTextField(
+                    controller: emailController,
                     text: "E-mail",
                     icon: Icon(Icons.mail),
                     readOnly: emailSent),
                 if (emailSent)
                   CustomTextField(
-                      text: "Code", icon: Icon(Icons.numbers), numeric: true),
+                      controller: codeController,
+                      text: "Code",
+                      icon: Icon(Icons.numbers),
+                      numeric: true),
                 if (emailSent)
                   CustomTextField(
+                      controller: passwordController,
                       text: "Password",
                       icon: Icon(Icons.key),
                       password: passwordVisualization,
                       hide: passwordStatus),
                 if (emailSent)
                   CustomTextField(
+                      controller: repPasswordController,
                       text: "Repeat password",
                       icon: Icon(Icons.key),
                       password: repeatPasswordVisualization,

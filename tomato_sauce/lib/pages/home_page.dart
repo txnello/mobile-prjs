@@ -17,6 +17,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final minutesWorkController = TextEditingController();
+  final minutesRestController = TextEditingController();
+  final repetitionsController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     onPressedContinueButton() {
@@ -64,10 +68,18 @@ class _HomePageState extends State<HomePage> {
             child: Column(
           children: [
             // text fields
-            CustomTextField(text: "Minutes of work", icon: Icon(Icons.work)),
             CustomTextField(
-                text: "Minutes of rest", icon: Icon(Icons.tag_faces_rounded)),
-            CustomTextField(text: "Repetitions", icon: Icon(Icons.numbers)),
+                controller: minutesWorkController,
+                text: "Minutes of work",
+                icon: Icon(Icons.work)),
+            CustomTextField(
+                controller: minutesRestController,
+                text: "Minutes of rest",
+                icon: Icon(Icons.tag_faces_rounded)),
+            CustomTextField(
+                controller: repetitionsController,
+                text: "Repetitions",
+                icon: Icon(Icons.numbers)),
 
             // continue button
             ContinueButton(
