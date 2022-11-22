@@ -12,20 +12,20 @@ class ImageGrid extends StatelessWidget {
     return Column(
       children: [
         for (int i = 0; i < images.length; i += 3)
-        Row(
-          children: [
-            for (var j = i; j < images.length && j < i + 3; j++)
-            Padding(
-              padding: const EdgeInsets.all(1.0),
-              child: Container(
-                width: 128,
-                child: ClipRRect(
-                  child: Image.asset(images[j]),
+          Row(
+            children: [
+              for (var j = i; j < images.length && j < i + 3; j++)
+                Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width / 3 - 2,
+                    child: ClipRRect(
+                      child: Image.asset(images[j]),
+                    ),
+                  ),
                 ),
-              ),
-            ),
-          ],
-        ),
+            ],
+          ),
       ],
     );
   }
