@@ -5,25 +5,31 @@ In this readme, I want to list some screenshots to show you the results.
 Thank you!
 
 
+<details>
+  <summary>Instagram clone</summary>
+  <img src="https://i.imgur.com/qg58BhY.jpg" width="400">
+  <img src="https://i.imgur.com/ttnN500.jpg" width="400">
+</details>
 
-Instagram clone:
-<img src="https://i.imgur.com/qg58BhY.jpg" width="48">
-![alt text](https://i.imgur.com/qg58BhY.jpg)
-![alt text](https://i.imgur.com/ttnN500.jpg)
+<details>
+  <summary>Netflix clone</summary>
+  <img src="https://i.imgur.com/fVqCKqL.jpg" width="400">
+  <img src="https://i.imgur.com/YNGZVL6.jpg" width="400">
+  <img src="https://i.imgur.com/363nidM.jpg" width="400">
+  <img src="https://i.imgur.com/KK3tCHE.jpg" width="400">
+</details>
 
-# Netflix clone:
-![alt text](https://i.imgur.com/fVqCKqL.jpg)
-![alt text](https://i.imgur.com/YNGZVL6.jpg)
-![alt text](https://i.imgur.com/363nidM.jpg)
-![alt text](https://i.imgur.com/KK3tCHE.jpg)
-
-# Write it down:
-![alt text](https://i.imgur.com/mImP5yH.png)
-
-# Tomato sauce (pomodoro app):
-![alt text](https://i.imgur.com/WphMFEV.png)
-![alt text](https://i.imgur.com/LJiy5rY.png)
-![alt text](https://i.imgur.com/iEacM5x.png)
-![alt text](https://i.imgur.com/E5nrQvt.png)
-![alt text](https://i.imgur.com/qAgYYpT.png)
-![alt text](https://i.imgur.com/6G5DErH.png)
+<details>
+  <summary>Write it down</summary>
+  <img src="https://i.imgur.com/mImP5yH.png" width="800">
+</details>
+  
+<details>
+  <summary>Tomato sauce (pomodoro app)</summary>
+  <img src="https://i.imgur.com/WphMFEV.png" width="400">
+  <img src="https://i.imgur.com/LJiy5rY.png" width="400">
+  <img src="https://i.imgur.com/iEacM5x.png" width="400">
+  <img src="https://i.imgur.com/E5nrQvt.png" width="400">
+  <img src="https://i.imgur.com/qAgYYpT.png" width="400">
+  <img src="https://i.imgur.com/6G5DErH.png" width="400">
+</details>
