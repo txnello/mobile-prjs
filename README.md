@@ -7,22 +7,22 @@ Thank you!
 
 
 Instagram clone:
-![alt text](https://imgur.com/qg58BhY)
-![alt text](https://imgur.com/ttnN500)
+![alt text](https://i.imgur.com/qg58BhY.jpg)
+![alt text](https://i.imgur.com/ttnN500.jpg)
 
 # Netflix clone:
-![alt text](https://imgur.com/fVqCKqL)
-![alt text](https://imgur.com/YNGZVL6)
-![alt text](https://imgur.com/363nidM)
-![alt text](https://imgur.com/KK3tCHE)
+![alt text](https://i.imgur.com/fVqCKqL.jpg)
+![alt text](https://i.imgur.com/YNGZVL6.jpg)
+![alt text](https://i.imgur.com/363nidM.jpg)
+![alt text](https://i.imgur.com/KK3tCHE.jpg)
 
 # Write it down:
-![alt text](https://imgur.com/mImP5yH)
+![alt text](https://i.imgur.com/mImP5yH.png)
 
 # Tomato sauce (pomodoro app):
-![alt text](https://imgur.com/WphMFEV)
-![alt text](https://imgur.com/LJiy5rY)
-![alt text](https://imgur.com/iEacM5x)
-![alt text](https://imgur.com/E5nrQvt)
-![alt text](https://imgur.com/qAgYYpT)
-![alt text](https://imgur.com/6G5DErH)
+![alt text](https://i.imgur.com/WphMFEV.png)
+![alt text](https://i.imgur.com/LJiy5rY.png)
+![alt text](https://i.imgur.com/iEacM5x.png)
+![alt text](https://i.imgur.com/E5nrQvt.png)
+![alt text](https://i.imgur.com/qAgYYpT.png)
+![alt text](https://i.imgur.com/6G5DErH.png)
