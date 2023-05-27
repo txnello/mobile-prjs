@@ -7,6 +7,7 @@ Thank you!
 
 
 Instagram clone:
+<img src="https://i.imgur.com/qg58BhY.jpg" width="48">
 ![alt text](https://i.imgur.com/qg58BhY.jpg)
 ![alt text](https://i.imgur.com/ttnN500.jpg)
 
