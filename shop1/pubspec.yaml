@@ -1,0 +1,31 @@
+name: shop1
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: TangoSans
+      fonts:
+        - asset: fonts/TangoSans.ttf
+        - asset: fonts/TangoSans_Italic.ttf
+          style: italic
+        - asset: fonts/TangoSans_Bold.ttf
+          weight: 700
