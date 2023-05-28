@@ -33,3 +33,11 @@ Thank you!
   <img src="https://i.imgur.com/qAgYYpT.png" width="400">
   <img src="https://i.imgur.com/6G5DErH.png" width="400">
 </details>
+
+<details>
+  <summary>Shop1 Idea</summary>
+  <img src="https://i.imgur.com/LBJRSDU.png" width="800">
+  <img src="https://i.imgur.com/wP3AFHO.png" width="400">
+  <img src="https://i.imgur.com/z2YdqlX.png" width="400">
+  <img src="https://i.imgur.com/YwigSZH.png" width="400">
+</details>
