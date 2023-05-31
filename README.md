@@ -22,7 +22,7 @@ Thank you!
 
 <details>
   <summary>Write it down</summary>
-  Not working anymore due to API shut down.
+  <h3>Not working anymore due to API shut down.</h3>
   <img src="https://i.imgur.com/mImP5yH.png" width="800">
 </details>
   
@@ -46,6 +46,7 @@ Thank you!
 
 <details>
   <summary>Pastry Shop UI</summary>
+  <h3>Speedrun project, I tried to make a similar UI in less time as possible. Estimated time: one hour.</h3>
   <img src="https://i.imgur.com/K1OSpwR.png" width="400">
   <img src="https://i.imgur.com/5Wudb9B.png" width="400">
 </details>
