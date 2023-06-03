@@ -1,7 +1,6 @@
 Hello, I'm a Flutter enthusiast and here you can find some UI projects I did.
 
 In this readme, I want to list some screenshots to show you the results.
-The goal has never been "replicating" an idea or an existing app, instead, I always tried to "interpret" the UI idea behind it, changing some parts if necessary.
 
 Thank you!
 
@@ -46,7 +45,6 @@ Thank you!
 
 <details>
   <summary>Pastry Shop UI</summary>
-  <h3>Speedrun project, I tried to make a similar UI in less time as possible. Estimated time: one hour.</h3>
   <img src="https://i.imgur.com/K1OSpwR.png" width="400">
-  <img src="https://i.imgur.com/5Wudb9B.png" width="400">
+  <img src="https://i.imgur.com/4RQBJcK.png" width="400">
 </details>
