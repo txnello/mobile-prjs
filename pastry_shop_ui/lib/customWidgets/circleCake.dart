@@ -23,10 +23,13 @@ class CircleCake extends StatelessWidget {
                 color: Colors.black,
                 borderType: BorderType.RRect,
                 radius: Radius.circular(100),
-                strokeWidth: 1,
-                child: CircleAvatar(
-                  backgroundImage: AssetImage(imgPath),
-                  radius: radius,
+                strokeWidth: 2,
+                child: Padding(
+                  padding: const EdgeInsets.all(5),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage(imgPath),
+                    radius: radius,
+                  ),
                 )),
             Positioned.fill(
               child: Align(

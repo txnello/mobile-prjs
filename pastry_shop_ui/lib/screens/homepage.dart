@@ -67,9 +67,9 @@ class _HomepageState extends State<Homepage> {
                 Row(
                   children: [
                     CircleCake(text: "Chocolate cake", bubbleContent: "\$12", radius: 45, imgPath: "assets/images/cake1.jpg", bubbleFontSize: 15),
-                    SizedBox(width: 30),
+                    SizedBox(width: 20),
                     CircleCake(text: "Normal cake", bubbleContent: "\$8", radius: 45, imgPath: "assets/images/cake3.jpg", bubbleFontSize: 15),
-                    SizedBox(width: 30),
+                    SizedBox(width: 20),
                     CircleCake(text: "123 cake", bubbleContent: "\$10", radius: 45, imgPath: "assets/images/cake4.jpg", bubbleFontSize: 15),
                   ],
                 ),
@@ -77,9 +77,9 @@ class _HomepageState extends State<Homepage> {
                 Row(
                   children: [
                     CircleCake(text: "Cake", bubbleContent: "\$14", radius: 45, imgPath: "assets/images/cake5.jpg", bubbleFontSize: 15),
-                    SizedBox(width: 30),
+                    SizedBox(width: 20),
                     CircleCake(text: "ABC cake", bubbleContent: "\$4", radius: 45, imgPath: "assets/images/cake6.jpg", bubbleFontSize: 15),
-                    SizedBox(width: 30),
+                    SizedBox(width: 20),
                     CircleCake(text: "Go cake", bubbleContent: "\$12", radius: 45, imgPath: "assets/images/cake7.jpg", bubbleFontSize: 15),
                   ],
                 )

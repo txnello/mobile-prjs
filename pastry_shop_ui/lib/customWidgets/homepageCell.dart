@@ -13,6 +13,13 @@ class HomepageCell extends StatelessWidget {
   Widget build(BuildContext context) {
     List<String> menuItems = ["New Items", "Cakes", "Pastry", "Drinks"];
 
+    Widget customLine(double width) {
+      return Container(
+        width: width,
+        decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.amber, width: 3))),
+      );
+    }
+
     List<Widget> menuBuilder() {
       List<Widget> lw = [];
 
@@ -55,7 +62,7 @@ class HomepageCell extends StatelessWidget {
 
     return Container(
       width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(20), boxShadow: [BoxShadow(color: Colors.grey, spreadRadius: 1, blurRadius: 15, offset: const Offset(0, 15))]),
+      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(50), boxShadow: [BoxShadow(color: Color.fromARGB(255, 235, 235, 235), spreadRadius: 1, blurRadius: 15, offset: const Offset(0, 15))]),
       child: Column(
         children: [
           SizedBox(height: 20),
@@ -87,6 +94,16 @@ class HomepageCell extends StatelessWidget {
                           children: const <TextSpan>[TextSpan(text: " 65% off", style: TextStyle(color: Colors.grey, fontSize: 13, fontWeight: FontWeight.bold))],
                         ),
                       )
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    children: [
+                      customLine(100),
+                      SizedBox(width: 7),
+                      customLine(3),
+                      SizedBox(width: 5),
+                      customLine(15)
                     ],
                   )
                 ],
@@ -132,9 +149,7 @@ class HomepageCell extends StatelessWidget {
                     "Bla bla bla bla",
                     style: TextStyle(fontSize: 10, color: Colors.grey),
                   ),
-
                   SizedBox(height: 20),
-
                   RatingBar.builder(
                     itemSize: 20,
                     initialRating: 3,
@@ -149,9 +164,7 @@ class HomepageCell extends StatelessWidget {
                     ),
                     onRatingUpdate: (rating) {},
                   ),
-
                   SizedBox(height: 5),
-
                   RichText(
                     text: TextSpan(
                       text: "\$ 16,02",
