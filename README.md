@@ -48,11 +48,3 @@ Thank you!
   <img src="https://i.imgur.com/K1OSpwR.png" width="400">
   <img src="https://i.imgur.com/4RQBJcK.png" width="400">
 </details>
-
-
-
-# Xamarin
-Soon...
-
-# Kotlin
-Soon...
