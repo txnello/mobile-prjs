@@ -1,10 +1,11 @@
+# Introduction
 Hello, I'm a Flutter enthusiast and here you can find some UI projects I did.
 
 In this readme, I want to list some screenshots to show you the results.
 
 Thank you!
 
-# Flutter
+# Screenshots
 <details>
   <summary>Instagram clone</summary>
   <img src="https://i.imgur.com/qg58BhY.jpg" width="400">
